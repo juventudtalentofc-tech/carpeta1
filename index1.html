@@ -333,7 +333,7 @@
                 font-weight: 600;
             }
 
-            .download-button {
+            .back-button {
                 position: fixed;
                 bottom: 20px;
                 right: 20px;
@@ -347,13 +347,15 @@
                 box-shadow: 0 4px 12px rgba(0,0,0,0.3);
                 cursor: pointer;
                 z-index: 999;
+                transition: all 0.3s ease;
             }
 
-            .download-button:active {
+            .back-button:active {
                 transform: scale(0.95);
+                box-shadow: 0 2px 8px rgba(0,0,0,0.3);
             }
 
-            .download-button svg {
+            .back-button svg {
                 width: 24px;
                 height: 24px;
                 color: white;
@@ -408,7 +410,7 @@
                 box-shadow: none;
             }
 
-            .mobile-view, .download-button {
+            .mobile-view, .back-button {
                 display: none !important;
             }
 
@@ -632,9 +634,9 @@
                 </div>
             </div>
 
-            <div class="download-button" onclick="window.print()">
+            <div class="back-button" onclick="window.history.back()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
             </div>
         </div>
