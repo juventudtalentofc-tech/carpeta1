@@ -348,6 +348,7 @@
                 cursor: pointer;
                 z-index: 999;
                 transition: all 0.3s ease;
+                text-decoration: none;
             }
 
             .back-button:active {
@@ -634,11 +635,21 @@
                 </div>
             </div>
 
-            <div class="back-button" onclick="window.history.back()">
+            <!-- ========================================= -->
+            <!-- BOTÓN DE NAVEGACIÓN (RETROCEDER/VOLVER)  -->
+            <!-- ========================================= -->
+            <!-- INSTRUCCIONES: Cambia el href="#" por la URL a donde quieras que vaya el botón -->
+            <!-- Ejemplos:
+                 - Para ir a tu página principal: href="index.html"
+                 - Para ir a tu portafolio: href="https://tuportafolio.com"
+                 - Para ir a otra página: href="contacto.html"
+                 - O cualquier otra URL que necesites
+            -->
+            <a href="index.html" class="back-button">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
-            </div>
+            </a>
         </div>
     </div>
 
